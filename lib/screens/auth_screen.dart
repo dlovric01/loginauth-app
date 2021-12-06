@@ -49,8 +49,14 @@ class _AuthScreenState extends State<AuthScreen> {
             password: _password,
           )
               .catchError((e) {
-            ScaffoldMessenger.of(context)
-                .showSnackBar(SnackBar(content: Text('Something went wrong')));
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                backgroundColor: Theme.of(context).colorScheme.secondary,
+                content: Text(
+                  'Try different email adress',
+                  style: TextStyle(
+                      color: Theme.of(context).errorColor,
+                      fontWeight: FontWeight.bold),
+                )));
             setState(() {
               _isLoading = false;
             });
