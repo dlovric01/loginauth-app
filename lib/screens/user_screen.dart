@@ -61,7 +61,10 @@ class _UserScreenState extends State<UserScreen> {
               // here only return is missing
               child: Text(
                 'Welcome ' + user!,
-                style: TextStyle(fontSize: 30),
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             );
           }),
