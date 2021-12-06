@@ -55,7 +55,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   'Try different email adress',
                   style: TextStyle(
                       color: Theme.of(context).errorColor,
-                      fontWeight: FontWeight.bold),
+                      fontWeight: FontWeight.w600),
                 )));
             setState(() {
               _isLoading = false;
